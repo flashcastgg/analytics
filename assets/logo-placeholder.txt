@@ -1,0 +1,3 @@
+Replace assets/logo.png with your actual logo file.
+Recommended: PNG, transparent background, height ~28px at 2x (56px source).
+The nav will fall back to text "Danson." if the image fails to load.
