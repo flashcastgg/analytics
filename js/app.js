@@ -12,6 +12,8 @@ function showPage(id, btnEl) {
     if (mirrorId) document.getElementById(mirrorId)?.classList.add('active');
   }
   closeMobileMenu();
+  // Always scroll to top when switching pages
+  window.scrollTo({ top: 0, behavior: 'instant' });
   // Show/hide secondary subnav
   const subnav = document.getElementById('subnav');
   const mainEl = document.querySelector('.main');
@@ -33,6 +35,7 @@ function showHero() {
   document.getElementById('page-hero').classList.add('active');
   document.getElementById('subnav')?.classList.remove('visible');
   document.querySelector('.main')?.classList.remove('has-subnav');
+  window.scrollTo({ top: 0, behavior: 'instant' });
   closeMobileMenu();
 }
 
